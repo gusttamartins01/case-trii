@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Orçamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form class="budget-form">
+            <h2>Peça seu orçamento agora mesmo!</h2>
+
+            <div class="row">
+                <div class="input-group">
+                    <input type="text" id="nome" placeholder=" " required>
+                    <label for="nome">Nome</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder=" " required>
+                    <label for="email">E-mail</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <input type="tel" id="tel" placeholder=" ">
+                    <label for="tel">Telefone</label>
+                </div>
+                <div class="input-group">
+                    <select id="servico" required>
+                        <option value="" disabled selected hidden></option>
+                        <option value="web">Desenvolvimento Web</option>
+                        <option value="design">Design </option>
+                        <option value="seo">Otimização de SEO</option>
+                        <option value="social-media">Gestão de Redes Sociais</option>
+                        <option value="ecommerce">Criação de Loja Virtual</option>
+                        <option value="branding">Identidade Visual & Branding</option>
+                    </select>
+                    <label for="servico">Escolha o serviço que deseja</label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <textarea id="msg" placeholder=" " rows="5"></textarea>
+                <label for="msg">Mensagem</label>
+            </div>
+
+            <div class="button-container">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
